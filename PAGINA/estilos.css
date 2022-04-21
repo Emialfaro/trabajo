@@ -1,0 +1,80 @@
+.background {
+  height: 100vh;
+  width: 100vw;
+  background: url("../IMAGENES/Diseño\ sin\ título.png") no-repeat center
+    center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  position: fixed;
+  opacity: 0.8;
+  top: 0;
+  z-index: -1;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.titulo {
+  margin: auto;
+  border: 1px black solid;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 10px 40px;
+}
+.titulo-animaciones {
+  width: 200px; 
+  transition: all 0.5s;
+}
+.titulo-animaciones:hover {
+ 
+     width: 600px;
+    padding: 40px;
+    background-color: cyan;
+ }
+footer {
+  padding-top: 20px;
+}
+
+.imagen {
+  height: 300px;
+}
+#grid {
+  display: grid;
+  width: 100%;
+  height: 250px;
+  grid-template-areas: 
+  "head head"
+  "nav  main"
+  "nav  foot";
+  grid-template-rows: 50px 1fr 30px;
+  grid-template-columns: 150px 1fr;
+}
+
+#grid header {
+  grid-area: head;
+  background-color: #2a48da;
+}
+
+#grid nav {
+  grid-area: nav;
+  background-color: #dd4021;
+}
+
+#grid main {
+  grid-area: main;
+  background-color: #44ee10;
+}
+
+#grid footer {
+  grid-area: foot;
+  background-color: #15eaf1;
+}
+#promosf{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  flex-wrap: wrap;
+}
